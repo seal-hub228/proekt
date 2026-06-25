@@ -1,4 +1,4 @@
-// ========== DATA С РЕАЛЬНЫМИ ФОТОГРАФИЯМИ ==========
+// ========== DATA С ЛОКАЛЬНЫМИ ФОТОГРАФИЯМИ ==========
 const toursData = [
     {
         id: 1,
@@ -6,7 +6,7 @@ const toursData = [
         desc: 'Все главные достопримечательности Петербурга с остановками для фото. Исаакиевский собор, Медный всадник, Дворцовая площадь.',
         price: '11 000 ₽',
         category: 'Городские',
-        image: 'https://images.unsplash.com/photo-1553636571-0b245187b0a4?w=600&h=400&fit=crop'
+        image: 'images/обзор.avif'
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ const toursData = [
         desc: 'История главной императорской резиденции и её коллекций. Зимний дворец, картины Да Винчи, Рембрандта и Тициана.',
         price: '8 000 ₽',
         category: 'Музеи',
-        image: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=600&h=400&fit=crop'
+        image: 'images/Эрмитаж.jpg'
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const toursData = [
         desc: 'Романтическая прогулка по рекам и каналам с видами разводных мостов. Дворцовая набережная, Стрелка Васильевского острова.',
         price: '6 500 ₽/час',
         category: 'Водные',
-        image: 'https://images.unsplash.com/photo-1596526131083-5c8d5e4b8b1b?w=600&h=400&fit=crop'
+        image: 'images/Ночной.webp'
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ const toursData = [
         desc: 'Мировой шедевр дворцово-паркового искусства. Большой каскад, Самсон, Нижний парк с фонтанами.',
         price: '16 000 ₽',
         category: 'Пригороды',
-        image: 'https://images.unsplash.com/photo-1560169893-e4f2c0e98f5b?w=600&h=400&fit=crop'
+        image: 'images/Петергоф.webp'
     },
     {
         id: 5,
@@ -38,7 +38,7 @@ const toursData = [
         desc: 'Екатерининский дворец, Янтарная комната, Екатерининский парк с павильонами и прудами.',
         price: '16 000 ₽',
         category: 'Пригороды',
-        image: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=600&h=400&fit=crop'
+        image: 'images/Царское.webp'
     },
     {
         id: 6,
@@ -46,60 +46,9 @@ const toursData = [
         desc: 'Путешествие на остров Котлин. Морской собор, форты, военно-морская слава России.',
         price: '16 000 ₽',
         category: 'Пригороды',
-        image: 'https://images.unsplash.com/photo-1541003821781-f4b5b795a6d0?w=600&h=400&fit=crop'
+        image: 'images/i.webp'
     },
-    {
-        id: 7,
-        title: 'Гатчина: императорская резиденция',
-        desc: 'Большой Гатчинский дворец, Приоратский дворец, английские и голландские парки.',
-        price: '16 000 ₽',
-        category: 'Пригороды',
-        image: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=600&h=400&fit=crop'
-    },
-    {
-        id: 8,
-        title: 'Музей Фаберже',
-        desc: 'Знаменитые ювелирные шедевры императорской России. Пасхальные яйца, драгоценности во дворце Нарышкиных-Шуваловых.',
-        price: '7 000 ₽',
-        category: 'Музеи',
-        image: 'https://images.unsplash.com/photo-1541003821781-f4b5b795a6d0?w=600&h=400&fit=crop'
-    },
-    {
-        id: 9,
-        title: 'Мистический Петербург',
-        desc: 'Легенды, призраки и тайны города на Неве. Дом Зингера, Летний сад, Чижик-Пыжик.',
-        price: '12 000 ₽',
-        category: 'Городские',
-        image: 'https://images.unsplash.com/photo-1553636571-0b245187b0a4?w=600&h=400&fit=crop'
-    },
-    {
-        id: 10,
-        title: 'Выборг: средневековый замок',
-        desc: 'Старинный город с булыжными мостовыми, рыцарским замком и запахом кренделя.',
-        price: '20 000 ₽',
-        category: 'Пригороды',
-        image: 'https://images.unsplash.com/photo-1541003821781-f4b5b795a6d0?w=600&h=400&fit=crop'
-    },
-    {
-        id: 11,
-        title: 'Русский музей',
-        desc: 'Уникальное хранилище русского искусства. Брюллов, Репин, Айвазовский в Михайловском дворце.',
-        price: '7 000 ₽',
-        category: 'Музеи',
-        image: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=600&h=400&fit=crop'
-    },
-    {
-        id: 12,
-        title: 'Реки и каналы днём',
-        desc: 'Неспешная прогулка по водным артериям города. Фонтанка, Мойка, канал Грибоедова.',
-        price: '10 000 ₽',
-        category: 'Водные',
-        image: 'https://images.unsplash.com/photo-1596526131083-5c8d5e4b8b1b?w=600&h=400&fit=crop'
-    }
 ];
-
-// ========== ОСТАЛЬНОЙ КОД БЕЗ ИЗМЕНЕНИЙ ==========
-// (всё, что было ниже, остаётся точно таким же)
 
 function createTourCard(tour) {
     const card = document.createElement('div');
@@ -148,7 +97,6 @@ function loadMore() {
     }
 }
 
-// ========== INIT CATALOG ==========
 function initCatalog() {
     if (catalogContainer) {
         currentCount = Math.min(loadStep, toursData.length);
@@ -162,7 +110,6 @@ function initCatalog() {
     }
 }
 
-// ========== FEATURED (Главная) ==========
 function initFeatured() {
     const featuredGrid = document.getElementById('featuredGrid');
     if (!featuredGrid) return;
