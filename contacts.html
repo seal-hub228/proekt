@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — G-812</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacts.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0D0D0D" />
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">G-812</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="catalog.html" class="nav-link">Экскурсии</a>
+                <a href="about.html" class="nav-link">О нас</a>
+                <a href="contacts.html" class="nav-link active">Контакты</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span class="theme-icon">☀️</span>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">☰</button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Экскурсии</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="contacts.html" class="nav-link active">Контакты</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Свяжитесь с нами</h1>
+                <p>Мы на связи 24/7, чтобы сделать ваш отдых идеальным</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h2>Наши контакты</h2>
+                    <div class="contact-item">
+                        <span class="contact-icon">✦</span>
+                        <div>
+                            <h4>Телефон / WhatsApp</h4>
+                            <a href="tel:+78121234567">+7 (812) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✦</span>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@g812.ru">info@g812.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✦</span>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>Санкт-Петербург, Невский пр., д. 100</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✦</span>
+                        <div>
+                            <h4>Режим работы</h4>
+                            <p>Ежедневно с 9:00 до 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h2>Оставить заявку</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" placeholder="Алексей" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="alex@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Опишите ваши пожелания..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-info">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">G-812</span>
+                </div>
+                <p>Индивидуальные экскурсии в Санкт-Петербурге и пригородах.</p>
+                <p>© 2026 G-812. Все права защищены.</p>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Экскурсии</a>
+                <a href="about.html">О нас</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

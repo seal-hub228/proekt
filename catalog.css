@@ -1,0 +1,99 @@
+/* ========== Catalog Grid ========== */
+.catalog-section {
+    padding: 2rem 0 4rem;
+}
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* ========== Tour Card ========== */
+.tour-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tour-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px var(--shadow-color);
+}
+.tour-image {
+    height: 200px;
+    background: var(--bg-hero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.tour-content {
+    padding: 1.5rem;
+}
+.tour-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.tour-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.tour-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+.tour-price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+.tour-category {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+    background: var(--accent-light);
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* ========== Page Header ========== */
+.page-header {
+    padding: 3rem 0 1.5rem;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+.page-header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.3rem;
+}
+.page-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+}

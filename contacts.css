@@ -1,0 +1,108 @@
+/* ========== Contact Section ========== */
+.contact-section {
+    padding: 3rem 0 5rem;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+}
+
+/* ========== Contact Info ========== */
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.contact-item {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    margin-bottom: 1.8rem;
+}
+.contact-icon {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+    min-width: 2.2rem;
+    margin-top: 0.1rem;
+}
+.contact-item h4 {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.contact-item a,
+.contact-item p {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contact-item a:hover {
+    color: var(--accent-color);
+}
+
+/* ========== Contact Form ========== */
+.contact-form-wrapper {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+.contact-form-wrapper h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+}
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+.contact-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(212, 120, 60, 0.15);
+}
+.contact-form textarea {
+    resize: vertical;
+}
+.contact-form .btn {
+    width: 100%;
+}
+.form-status {
+    margin-top: 1rem;
+    font-weight: 500;
+    text-align: center;
+    min-height: 2rem;
+}
+.form-status.success {
+    color: #4CAF50;
+}
+.form-status.error {
+    color: #f44336;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+}
